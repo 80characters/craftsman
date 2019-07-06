@@ -1,2 +1,19 @@
-# reloaded
+== 80characters/reloaded ===
+Tags: reloaded, block, cpanel, options
+Requires at least: 4.4
+Tested up to: 5.2.0
+Stable tag: 19.07.06
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
+Contributors: 80characters
+
+== Description ==
 Additional energy for a wordpress theme
+
+== Installation ==
+
+== Screenshots ==
+
+== Documentation ==
+
+== Changelog ==
