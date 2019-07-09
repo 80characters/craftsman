@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: 80characters
 
 == Description ==
-Additional energy for a wordpress theme
+Additional energy for a wordpress theme. Which created by "80chars.com".
 
 == Installation ==
 

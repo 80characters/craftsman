@@ -2,7 +2,7 @@
 /*
 Plugin Name: Reloaded
 Plugin URI: http://80chars.com/plugins/reloaded
-Description: Additional energy for a wordpress theme
+Description: Additional energy for a wordpress theme. Which created by "80chars.com".
 Version: 1.0.1
 Author: 80characters
 Author URI: http://80chars.com
@@ -13,3 +13,8 @@ Tested up to: 5.2.0
 Text Domain: reloaded
 Domain Path: /languages/
 */
+
+define( 'RELOADED_DIR_URL', plugin_dir_url( __FILE__ ) );
+define( 'RELOADED_DIR_PATH', plugin_dir_path( __FILE__ ) );
+
+
