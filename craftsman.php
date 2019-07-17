@@ -3,7 +3,7 @@
 Plugin Name: Craftsman
 Plugin URI: http://80chars.com/plugins/reloaded
 Description: Additional energy for a wordpress theme. Which created by love and coffee, for me and for you.
-Version: 19.07.17
+Version: 19.07.06
 Author: 80characters
 Author URI: http://80chars.com
 License: GNU General Public License v3 or later
@@ -22,5 +22,3 @@ require_once(CRAFTSMAN_DIR_PATH . '/vendor/autoload.php');
 global $craftsman;
 
 $craftsman = \Craftsman\Craftsman::getInstance();
-
-dd($craftsman);
