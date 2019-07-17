@@ -9,5 +9,16 @@
             "email": "80chars@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php-di/php-di": "^6.0",
+        "monolog/monolog": "^1.24"
+    },
+    "autoload": {
+        "psr-4": {
+            "Craftsman\\": "app/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3"
+    }
 }
