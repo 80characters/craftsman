@@ -1,5 +1,5 @@
-== 80characters/reloaded ===
-Tags: reloaded, block, customize, options, gutenberg
+== 80characters/craftsman ===
+Tags: craftsman, block, customize, options, gutenberg
 Requires at least: 4.4
 Tested up to: 5.2.0
 Stable tag: 19.07.06
