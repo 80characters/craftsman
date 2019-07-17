@@ -5,7 +5,7 @@ Tested up to: 5.2.0
 Stable tag: 19.07.06
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
-Contributors: 80characters
+Contributors: 80characters, tranthethang
 
 == Description ==
 Additional energy for a wordpress theme. Which created by "80chars.com".
