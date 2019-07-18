@@ -17,7 +17,7 @@ Domain Path: /languages/
 define('CRAFTSMAN_DIR_URL', plugin_dir_url(__FILE__));
 define('CRAFTSMAN_DIR_PATH', plugin_dir_path(__FILE__));
 
-require_once(CRAFTSMAN_DIR_PATH . '/vendor/autoload.php');
+require_once(CRAFTSMAN_DIR_PATH . 'vendor/autoload.php');
 
 global $craftsman;
 
