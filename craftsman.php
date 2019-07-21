@@ -13,12 +13,14 @@ Tested up to: 5.2.2
 Text Domain: craftsman
 Domain Path: /languages/
 */
+global $craftsman;
 
 define( 'CRAFTSMAN_DIR_URL', plugin_dir_url( __FILE__ ) );
 define( 'CRAFTSMAN_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
-require_once( CRAFTSMAN_DIR_PATH . 'vendor/autoload.php' );
+$vendor = CRAFTSMAN_DIR_PATH . 'vendor/autoload.php';
 
-global $craftsman;
-
-$craftsman = \Craftsman\Craftsman::getInstance();
+if ( file_exists( $vendor ) ) {
+	require_once( $vendor );
+	$craftsman = \Craftsman\Craftsman::getInstance();
+}
