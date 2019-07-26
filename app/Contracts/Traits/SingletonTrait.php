@@ -6,7 +6,8 @@ namespace Craftsman\Contracts\Traits;
  * Trait SingletonTrait
  * @package Craftsman\Contracts\Traits
  */
-trait SingletonTrait {
+trait SingletonTrait
+{
 	/**
 	 * @var self[]
 	 */
@@ -17,21 +18,23 @@ trait SingletonTrait {
 	 *
 	 * @return $this
 	 */
-	public static function getInstance() {
+	public static function getInstance()
+	{
 		$self = static::class;
-		if ( ! isset( self::$instances[ $self ] ) ) {
-			self::$instances[ $self ] = new $self;
+		if (!isset(self::$instances[$self])) {
+			self::$instances[$self] = new $self;
 		}
 
-		return self::$instances[ $self ];
+		return self::$instances[$self];
 	}
 
 	/**
 	 * @return bool true if has instance, otherwise false
 	 */
-	protected static function hasInstance() {
+	protected static function hasInstance()
+	{
 		$self = static::class;
 
-		return isset( self::$instances[ $self ] );
+		return isset(self::$instances[$self]);
 	}
 }
