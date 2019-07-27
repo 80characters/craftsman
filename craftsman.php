@@ -21,9 +21,10 @@ define('CRAFTSMAN_DIR_PATH', plugin_dir_path(__FILE__));
 
 $vendor = CRAFTSMAN_DIR_PATH . 'vendor/autoload.php';
 
+
 if (file_exists($vendor)) {
 	require_once($vendor);
 
 	$jirvas = \Craftsman\Jirvas::getInstance();
-	$craftsman = \Craftsman\Craftsman::getInstance();	
+	$craftsman = \Craftsman\Craftsman::getInstance();
 }

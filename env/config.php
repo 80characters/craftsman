@@ -1,5 +1,8 @@
 <?php
 
+use \Craftsman\Contracts\Pages\IWelcomePage;
+use \Craftsman\Entities\Pages\WelcomePage;
+
 return [
-//	Craftsman\Contracts\IBlock::class => \DI\autowire( \Craftsman\Blocks\Greeting::class )
+    IWelcomePage::class => \DI\autowire(WelcomePage::class)
 ];
