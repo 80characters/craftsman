@@ -8,11 +8,17 @@ class WelcomePage extends AbstractPage implements IWelcomePage
 {
     public function __construct()
     {
-        $this->page_title = 'ABC';
-        $this->menu_title = 'ABC';
+        $this->page_title = 'Craftsman';
+        $this->menu_title = 'Craftsman';
         $this->capability = 'manage_options';
-        $this->menu_slug = 'abc';
-        
+        $this->menu_slug = 'craftsman-page';
+        $this->icon_url = 'dashicons-rest-api';
+
         parent::__construct();
+    }
+
+    public function display()
+    {
+        
     }
 }
