@@ -20,3 +20,6 @@ wp-content/plugins/hello.php
 vendor/
 storage/tmp/*
 storage/proxies/*
+
+/node_modules
+/.vscode

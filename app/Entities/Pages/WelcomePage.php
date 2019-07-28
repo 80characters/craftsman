@@ -19,6 +19,5 @@ class WelcomePage extends AbstractPage implements IWelcomePage
 
     public function display()
     {
-        
     }
 }

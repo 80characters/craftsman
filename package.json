@@ -1,0 +1,9 @@
+{
+  "name": "craftsman",
+  "version": "19.07.06",
+  "description": "Additional energy for a wordpress theme. Which created by love and coffee, for me and for you.",
+  "main": "index.js",
+  "repository": "https://github.com/80characters/craftsman.git",
+  "author": "80characters <80characters@gmail.com>",
+  "license": "MIT"
+}
