@@ -32,5 +32,6 @@ abstract class AbstractPage implements IPage
     }
 
     public function display()
-    { }
+    {
+    }
 }

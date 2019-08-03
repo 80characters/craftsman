@@ -11,20 +11,20 @@ use Craftsman\Contracts\Pages\IWelcomePage;
  */
 final class Craftsman implements ISingleton
 {
-	use SingletonTrait;
+    use SingletonTrait;
 
-	private function __construct()
-	{
-		/** @var \Craftsman\Jirvas $jirvas */
-		global $jirvas;
+    private function __construct()
+    {
+        /** @var \Craftsman\Jirvas $jirvas */
+        global $jirvas;
 
-		$jirvas->resolve(IWelcomePage::class);
+        $jirvas->resolve(IWelcomePage::class);
 
-		add_action('plugins_loaded', array($this, 'plugins_loaded'));
-	}
+        add_action('plugins_loaded', array($this, 'plugins_loaded'));
+    }
 
-	public function plugins_loaded()
-	{
-		load_plugin_textdomain('craftsman', false, CRAFTSMAN_DIR_PATH . '/languages');
-	}
+    public function plugins_loaded()
+    {
+        load_plugin_textdomain('craftsman', false, CRAFTSMAN_DIR_PATH . '/languages');
+    }
 }

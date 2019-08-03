@@ -2,6 +2,6 @@
 
 namespace Craftsman\Contracts\Assets;
 
-interface IFrontendAsset extends IAsset {
-    
+interface IFrontendAsset extends IAsset
+{
 }

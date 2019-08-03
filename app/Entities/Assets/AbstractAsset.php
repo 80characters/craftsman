@@ -19,10 +19,12 @@ abstract class AbstractAsset implements IAsset
     }
 
     public function register()
-    { }
+    {
+    }
 
     public function queues()
-    { }
+    {
+    }
 
     public function for()
     {
