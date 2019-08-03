@@ -16,4 +16,7 @@ Additional energy for a wordpress theme. Which created by "80chars.com".
 
 == Documentation ==
 
+- Fix PHP-CS with `php-cs-fixer fix DIR_NAME`
+
+
 == Changelog ==
