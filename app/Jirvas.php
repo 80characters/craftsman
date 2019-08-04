@@ -18,8 +18,8 @@ final class Jirvas implements IAssistant
     private function __construct()
     {
         $builder = new \DI\ContainerBuilder();
-        $builder->addDefinitions(CRAFTSMAN_DIR_PATH . "env/config.php");
-        $builder->enableCompilation(CRAFTSMAN_DIR_PATH . '/storage/tmp/');
+        $builder->useAutowiring(true);
+        $builder->addDefinitions(CRAFTSMAN_DIR_PATH . "env/config.php");        
         $builder->writeProxiesToFile(true, CRAFTSMAN_DIR_PATH . '/storage/proxies/');
         $this->_container = $builder->build();
     }
@@ -33,6 +33,6 @@ final class Jirvas implements IAssistant
      */
     public function resolve($contract)
     {
-        return $this->_container->get($contract);
+        return $this->_container->get($this->_container->get($contract));
     }
 }

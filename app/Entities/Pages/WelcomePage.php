@@ -12,12 +12,13 @@ class WelcomePage extends AbstractPage implements IWelcomePage
         $this->menu_title = 'Craftsman';
         $this->capability = 'manage_options';
         $this->menu_slug = 'craftsman-page';
-        $this->icon_url = 'dashicons-rest-api';
+        $this->icon_url = 'dashicons-image-filter';
 
         parent::__construct();
     }
 
     public function display()
     {
+        
     }
 }

@@ -13,7 +13,7 @@
  *
  * Description: Additional energy for a WordPress theme. Which created by love and coffee, for me and for you.
  * Plugin Name: Craftsman
- * Plugin URI: http://80chars.com/plugins/reloaded
+ * Plugin URI: http://80chars.com/plugins/craftsman
  * Version: 19.07.06
  * Author: 80characters
  * Author URI: http://80chars.com
