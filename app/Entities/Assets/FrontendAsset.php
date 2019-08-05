@@ -4,6 +4,8 @@ namespace Craftsman\Entities\Assets;
 
 use Craftsman\Contracts\Assets\IFrontendAsset;
 
-class FrontendAsset extends AbstractAsset implements IFrontendAsset
-{
+class FrontendAsset extends AbstractAsset implements IFrontendAsset {
+	public function isBackend() {
+		return false;
+	}
 }

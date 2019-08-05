@@ -11,9 +11,17 @@
  * @since    19.07.06
  */
 
-use \Craftsman\Contracts\Pages\IWelcomePage;
-use \Craftsman\Entities\Pages\WelcomePage;
+use Craftsman\Contracts\Pages\IWelcomePage;
+use Craftsman\Entities\Pages\WelcomePage;
 
-return [
-    IWelcomePage::class => WelcomePage::class
-];
+use Craftsman\Contracts\Assets\IBackendAsset;
+use Craftsman\Entities\Assets\BackendAsset;
+
+use Craftsman\Contracts\Assets\IFrontendAsset;
+use Craftsman\Entities\Assets\FrontendAsset;
+
+return array(
+	IWelcomePage::class   => WelcomePage::class,
+	IBackendAsset::class  => BackendAsset::class,
+	IFrontendAsset::class => FrontendAsset::class
+);

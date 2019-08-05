@@ -22,9 +22,9 @@ final class Craftsman implements ISingleton
     {
         load_plugin_textdomain('craftsman', false, CRAFTSMAN_DIR_PATH . '/languages');
 
-        /** @var \Craftsman\Jirvas $jirvas */
-        global $jirvas;
+        /** @var \Craftsman\Midas $midas */
+        global $midas;
 
-        $jirvas->resolve(IWelcomePage::class);
+        $midas->resolve(IWelcomePage::class);
     }
 }
