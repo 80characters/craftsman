@@ -27,14 +27,14 @@
 
 global $craftsman, $jirvas;
 
-define('CRAFTSMAN_DIR_URL', plugin_dir_url(__FILE__));
-define('CRAFTSMAN_DIR_PATH', plugin_dir_path(__FILE__));
+define( 'CRAFTSMAN_DIR_URL', plugin_dir_url( __FILE__ ) );
+define( 'CRAFTSMAN_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
 $vendor = CRAFTSMAN_DIR_PATH . 'vendor/autoload.php';
 
-if (file_exists($vendor)) {
-    include_once $vendor;
+if ( file_exists( $vendor ) ) {
+	include_once $vendor;
 
-    $jirvas = \Craftsman\Jirvas::getInstance();
-    $craftsman = \Craftsman\Craftsman::getInstance();
+	$jirvas    = \Craftsman\Jirvas::getInstance();
+	$craftsman = \Craftsman\Craftsman::getInstance();
 }

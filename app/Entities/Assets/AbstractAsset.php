@@ -11,7 +11,7 @@ abstract class AbstractAsset implements IAsset
     public function __construct()
     {
         $hookName = 'admin_enqueue_scripts';
-        if (self::FOR_FRONT === $this->for()) {
+        if (self::FOR_FRONT === $this->with()) {
             $hookName = 'wp_enqueue_scripts';
         }
 
@@ -26,7 +26,7 @@ abstract class AbstractAsset implements IAsset
     {
     }
 
-    public function for()
+    public function with()
     {
         return in_array($this->type, [self::FOR_BACK, self::FOR_FRONT]) ? $this->type : IAsset::FOR_FRONT;
     }
