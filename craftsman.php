@@ -27,6 +27,7 @@
 
 global $craftsman, $midas;
 
+define( 'CRAFTSMAN_PREFIX', 'craftsman_' );
 define( 'CRAFTSMAN_DIR_URL', plugin_dir_url( __FILE__ ) );
 define( 'CRAFTSMAN_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
@@ -35,6 +36,6 @@ $vendor = CRAFTSMAN_DIR_PATH . 'vendor/autoload.php';
 if ( file_exists( $vendor ) ) {
 	include_once $vendor;
 
-	$midas    = \Craftsman\Midas::getInstance();
+	$midas     = \Craftsman\Midas::getInstance();
 	$craftsman = \Craftsman\Craftsman::getInstance();
 }

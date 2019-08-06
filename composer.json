@@ -1,24 +1,24 @@
 {
-    "name": "80characters/craftsman",
-    "type": "project",
-    "license": "GPL version 3 - http://www.gnu.org/licenses/gpl-3.0.html",
-    "description": "Additional energy for a wordpress theme. Which created by '80chars.com'.",
-    "authors": [
-        {
-            "name": "80characters",
-            "email": "80chars@gmail.com"
-        }
-    ],
-    "require": {
-        "php-di/php-di": "^5.0",
-        "symfony/var-dumper": "^3.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "Craftsman\\": "app/"
-        }
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "^3.4"
+  "name": "80characters/craftsman",
+  "type": "project",
+  "license": "GPL version 3 - http://www.gnu.org/licenses/gpl-3.0.html",
+  "description": "Additional energy for a wordpress theme. Which created by '80chars.com'.",
+  "authors": [
+    {
+      "name": "80characters",
+      "email": "80chars@gmail.com"
     }
+  ],
+  "require": {
+    "php-di/php-di": "^5.0",
+    "symfony/var-dumper": "^3.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Craftsman\\": "app/"
+    }
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.4"
+  }
 }

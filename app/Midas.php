@@ -8,7 +8,7 @@ use Craftsman\Contracts\Traits\SingletonTrait;
 final class Midas implements IAssistant {
 	use SingletonTrait;
 
-	private $container;
+	private $_container;
 
 	/**
 	 * Midas constructor.
@@ -20,7 +20,7 @@ final class Midas implements IAssistant {
 		$builder->useAutowiring( true );
 		$builder->addDefinitions( CRAFTSMAN_DIR_PATH . 'env/config.php' );
 		$builder->writeProxiesToFile( true, CRAFTSMAN_DIR_PATH . '/storage/proxies/' );
-		$this->container = $builder->build();
+		$this->_container = $builder->build();
 	}
 
 	/**
@@ -33,6 +33,6 @@ final class Midas implements IAssistant {
 	 * @throws \DI\NotFoundException
 	 */
 	public function resolve( $contract ) {
-		return $this->container->get( $this->container->get( $contract ) );
+		return $this->_container->get( $this->_container->get( $contract ) );
 	}
 }
