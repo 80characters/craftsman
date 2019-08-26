@@ -25,3 +25,5 @@ storage/proxies/*
 /.vscode
 .php_cs.cache
 ./composer.lock
+
+/public
