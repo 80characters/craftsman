@@ -20,3 +20,4 @@ Additional energy for a wordpress theme. Which created by "80chars.com".
 
 
 == Changelog ==
+19.07.06    Init
